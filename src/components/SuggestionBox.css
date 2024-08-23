@@ -1,0 +1,23 @@
+.suggestion-container{
+    background-color: rgba(23, 0, 69, 0.04);
+    border-radius: 6px;
+    color: #303437;
+    text-align: left;
+    padding: 5px 10px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .suggestion-field{
+    margin: 5px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 84px;
+    color: #170045;
+  }
+  
+  .suggestion-text{
+    margin: 5px;
+    font-style: normal;
+    font-weight: 500;
+  
+  }

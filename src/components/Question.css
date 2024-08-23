@@ -1,0 +1,10 @@
+.question-container{
+    background-color: rgba(23, 0, 69, 0.04);
+    border-radius: 6px;
+    padding: 5px 10px;  
+    width: 80%;
+    margin-bottom: 10px;
+    border-radius: 84px;
+    text-align: left;
+    color: #170045;
+  }

@@ -1,0 +1,79 @@
+/* ChicCheckRating.css */
+
+.chic-check-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f8fc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .chic-check-header {
+    font-size: 12px;
+    color: #1a1a3c;
+  }
+  .chic-check-row-header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .chic-check-rating {
+    position: relative;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background: conic-gradient(
+      #5578f3 0deg,
+      #5578f3 var(--rating-percentage, 0deg),
+      #e0e0e0 var(--rating-percentage, 0deg) 360deg
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .chic-check-inner-circle {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #f8f8fc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .chic-check-percent {
+    font-size: 25px;
+    color: #1a1a3c;
+    font-weight: bold;
+  }
+  
+  .chic-check-text {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #8f8fa3;
+  }
+  
+  .bold {
+    font-weight: bold;
+    color: #1a1a3c;
+  }
+  .info-icon-chic-check {
+    color: black;
+    font-size: 12px;
+    width: 14px;
+    height: 14px;
+    display: flex;
+    border-radius: 50%;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    border-radius:  12px;
+    margin-left: 15px;
+  }

@@ -1,0 +1,212 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+.App {
+    color: black;
+    text-align: center;
+    border-radius: "50px";  
+
+}
+input:focus {
+  outline: 2px solid #007bff; /* Blue outline when focused */
+  outline-offset: 2px;
+}
+
+textarea:focus {
+  outline: 2px solid #007bff; /* Blue outline when focused */
+  outline-offset: 2px;
+}
+
+select:focus {
+  outline: 2px solid #007bff; /* Blue outline when focused */
+  outline-offset: 2px;
+}
+
+.container {
+    width: 22rem;
+    overflow-y: hidden;
+    background-color: rgb(255, 255, 255);
+
+}
+.myFont {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: 'Gilroy', sans-serif;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.header {
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  font-size: 18px;
+  font-weight: bold;
+  color: #4d4d4d;
+}
+
+.header .status {
+  display: flex;
+  align-items: center;
+}
+
+.header .status .dot {
+  height: 10px;
+  width: 10px;
+  background-color: #00ff00;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 10px;
+  background-color: white;
+}
+
+.message {
+  margin-bottom: 10px;
+  max-width: 80%;
+}
+
+.bot-message {
+  background-color: #F2F4F5;
+  padding: 15px;
+  border-radius: 15px;
+  color: #303437;
+  text-align: left;
+}
+
+.user-message {
+  background-color: #F7F8FE;
+  padding: 15px;
+  border-radius: 15px;
+  /* align-self: flex-end; */
+  text-align: right;
+  color: #170045; 
+}
+
+.user-message .message-text {
+  color: #4d4d4d;
+}
+
+.input-container {
+  display: flex;
+  border-top: 1px solid #F1F1F1;
+  padding: 10px;
+  background-color: #F7F8FE;
+  color: #170045;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  outline: none;
+  color: #170045;
+}
+
+.input-container button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  border: none;
+  background-color: #4d4d4d;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+}
+
+.input-container button:active {
+  background-color: #333;
+}
+
+.option {
+  padding: 10px 16px;
+  border-radius: 24px;
+  background-color: rgba(247, 248, 254, 1);
+  margin-top: 10px;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.option p {
+  color: rgba(23, 0, 69, 1);
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 600;
+}
+
+.option:hover {
+  background-color: rgba(237, 240, 247, 1);
+}
+
+
+.bottom-navbar {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+  background-color: #ffffff;
+}
+
+.bottom-navbar .nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.bottom-navbar .nav-item img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 5px;
+}
+
+.bottom-navbar .nav-item span {
+  color: #000000;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+::-webkit-scrollbar {
+display: none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+.logo-text {
+  display: flex;
+  align-items: center;
+  font-family: 'Gilroy', sans-serif; /* Using Roboto as an example, update to match exact font */
+  color: #220052; /* Update to match exact color */
+}
+
+.logo-text .one {
+  font-size: 14px; /* Adjust the size to match the '1' */
+  font-weight: 700; /* Adjust the weight to match the '1' */
+}
+
+.logo-text .click {
+  font-size: 14px; /* Adjust the size to match 'CLICK' */
+  font-weight: 100; /* Adjust the weight to match 'CLICK' */
+}
+

@@ -1,0 +1,42 @@
+.menu-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-top: 1px solid #ccc;
+  }
+  
+  .menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: black;
+    width: 50%;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .icon {
+    font-size: 24px;
+  }
+  
+  .label {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  
+  .menu-item.selected::before {
+    content: '';
+    position: relative;
+    width: 100%;
+    top: 0px; /* Adjust this value if needed */
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: black;
+  }
+  
