@@ -22,7 +22,7 @@ const SuggestionBox:React.FC<SuggestionBoxProps>= ({handleSend,suggestionList,pa
         (element as HTMLElement).style.backgroundColor = "white";
         (element as HTMLElement).style.color = "#170045";
       });
-      element.style.backgroundColor = "#007bff";
+      element.style.backgroundColor = "#004AAD";
       element.style.color = "white";
     }
     if (message) handleSend(message?.toString());

@@ -30,7 +30,7 @@ window.addEventListener('message', (event) => {
     const description =  extractContent('.expandable-text__inner-content','description')
     const color =  extractContent('.product-color-extended-name','color')
     const title =  extractContent('.product-detail-info__header-name','title')
-    chrome.runtime.sendMessage({ storeId: zaraValue?.appConfig?.storeId, description, url: getPageURL(),color,title }, function(response) {
+    chrome.runtime.sendMessage({ storeId: zaraValue?.appConfig?.storeId?.toString(), description, url: getPageURL(),color,title }, function(response) {
       console.log("Response from background:", response,description,color,title );
     });
   }

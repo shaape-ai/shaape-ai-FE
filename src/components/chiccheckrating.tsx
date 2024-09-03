@@ -1,5 +1,6 @@
 import React from "react";
 import "./chiccheckrating.css";
+import Tooltip from '@mui/material/Tooltip';
 
 function ChicCheckRating({ rating, text }: { rating: any, text: string }) {
   const ratingPercentage = `${rating * 3.6}deg`;
@@ -8,7 +9,9 @@ function ChicCheckRating({ rating, text }: { rating: any, text: string }) {
     <div className="chic-check-container">
       <div className="chic-check-row-header">
         <div className="chic-check-header">ChicCheck</div>
-        <div className="info-icon-chic-check">i</div>
+        <Tooltip title="ChicCheck rates how well a garment fits your size and style preferences. A high score means it’s a great match for you—shop confidently and in style!">
+          <div className="info-icon-chic-check">i</div>  
+        </Tooltip>
       </div>
 
       <div

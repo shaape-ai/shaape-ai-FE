@@ -23,7 +23,7 @@ const Question:React.FC<QuestionsProps> = ({handleSend,questions,parentKey}) => 
           (element as HTMLElement).style.backgroundColor = "rgba(23, 0, 69, 0.04)";
           (element as HTMLElement).style.color = "#170045";
         });
-        element.style.backgroundColor = "#007bff";
+        element.style.backgroundColor = "#004AAD";
         element.style.color = "white";
       }
       console.log("the selected message is", message);

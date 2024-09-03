@@ -4,16 +4,17 @@ import { Line } from 'react-chartjs-2';
 import 'chart.js/auto';
 import './PriceGraph.css';
 
-const PricePerformanceChart = () => {
+const PricePerformanceChart = ({prices}: any) => {
+
   const data = {
-    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
+    labels: prices.labels,
     datasets: [
       {
-        label: 'Price Performance',
-        data: [10, 20, 50, 30, 40, 80, 60, 40],
+        label: 'Price',
+        data: prices.data,
         fill: false,
-        backgroundColor: 'rgba(85, 120, 243, 1)',
-        borderColor: 'rgba(85, 120, 243, 1)',
+        backgroundColor: '#004AAD',
+        borderColor: '#004AAD ',
         tension: 0.4,
       },
     ],
@@ -29,7 +30,7 @@ const PricePerformanceChart = () => {
     },
     scales: {
       y: {
-        beginAtZero: true,
+        beginAtZero: false,
         ticks: {
           stepSize: 10,
         },

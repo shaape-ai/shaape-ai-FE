@@ -5,14 +5,14 @@ import "../App.css";
 import Chat from "./Chat";
 import React, { useEffect, useState } from 'react';
 import uuid from 'react-uuid';
-import { API_URL } from "../utils/utils";
+import { API_URL_PROD } from "../utils/utils";
 
 
 
 
 function Navbar() {
 
-  const URL = `${API_URL}/get_size_chart`;
+  const URL = `${API_URL_PROD}/get_size_chart`;
 
   const [details, setDetails] = useState('Fetching data...');
 
@@ -76,14 +76,14 @@ function Navbar() {
   })
 
   return (
-    <div className="flex flex-row items-center justify-between px-3 py-3 shadow-md">
+    <div className="flex flex-row items-center justify-between px-3 py-2 shadow-md">
       {/* <MdOutlineSort height={20} width={20}/> */}
       {/* <img src="./assests/sort_icon.png" alt="sort_icon" className="h-6 w-6"  /> */}
       {/* <h2 className="myFont text-3xl text-primary" style={{ fontWeight: 600 }}>
         1<span className="text-secondary">cl</span>ick!
       </h2> */}
       <div className="logo-text">
-        <span className="one">1</span>
+        <span className="one" >1</span>
         <span className="click">CLICK</span>
       </div>
       <div onClick={() => window.close()}>

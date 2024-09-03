@@ -1,6 +1,6 @@
 .suggestion-container{
     background-color: rgba(23, 0, 69, 0.04);
-    border-radius: 6px;
+    border-radius: 15px;
     color: #303437;
     text-align: left;
     padding: 5px 10px;
@@ -11,7 +11,8 @@
     margin: 5px;
     display: inline-block;
     background-color: white;
-    border-radius: 84px;
+    border-radius: 100px;
+    padding: 0px 5px;
     color: #170045;
   }
   

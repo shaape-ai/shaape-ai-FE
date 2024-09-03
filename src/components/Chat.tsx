@@ -11,9 +11,7 @@ import ProductList from "./ProductList";
 import SuggestionBox from "./SuggestionBox";
 import Question from "./Question";
 import axios from "axios";
-import { query } from "express";
-import { colors } from "@mui/material";
-import { API_URL } from "../utils/utils";
+import { API_URL_PROD } from "../utils/utils";
 // interface Message {
 //   type: "bot" | "user";
 //   text: string;
@@ -24,12 +22,10 @@ const Chat: React.FC = () => {
   const [messages, setMessages] = useState([
     {
       type: "bot",
-      text: "Hello, I'm 1Click Bot! 👋 I'm your personal fashion assistant.Select the perfect occasion for your outfit! 👗🎉 ",
+      text: "Hello, I'm 1Click Bot! 👋 I'm your personal fashion assistant. Select the gender you are looking to buy for 💁‍♂️💁‍♀️ ",
       suggestion: [
-        '💼  Formal',
-        '🎉  Party',
-        '🪩  Clubbing',
-        '🕶️  Casual'
+        'Men 👦',
+        'Women 👩‍🦰',
       ],
       questions: [],
       products: []
@@ -67,19 +63,21 @@ const Chat: React.FC = () => {
     // );
 
     setMessages(userMessage);
+    console.log("preferencesfdsafsf",preference);
     const requestObj = {
       userid: uuid,
       query: txt,
       color: (preference as any)?.['color'],
       ocassion: (preference as any)?.['ocassion'],
       fitting : (preference as any)?.['fitting'],
-      product: initialProductData,
+      gender:(preference as any)?.['gender'],
+      product: initialProductData,  
     };
     console.log("reqeustObj", requestObj);
     setInput("");
     try {
       const response = await axios.post(
-        `${API_URL}/chatbot`,
+        `${API_URL_PROD}/chatbot`,
         requestObj
       );
       console.log("response",response);
@@ -101,7 +99,7 @@ const Chat: React.FC = () => {
         function () {
           console.log("Bot message added successfully");
         }
-      );
+      );  
       setPreference(response.data["preference"] ?? {});
       chrome.storage.local.set(
         {

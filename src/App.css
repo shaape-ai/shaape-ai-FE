@@ -2,11 +2,13 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 .App {
     color: black;
     text-align: center;
     border-radius: "50px";  
-
 }
 input:focus {
   outline: 2px solid #007bff; /* Blue outline when focused */
@@ -30,7 +32,7 @@ select:focus {
 
 }
 .myFont {
-  font-family: "Nunito", sans-serif;
+  font-family: 'Questrial', sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
@@ -38,7 +40,7 @@ select:focus {
 
 body {
   margin: 0;
-  font-family: 'Gilroy', sans-serif;
+  font-family: 'Questrial', sans-serif;
 }
 
 .chat-container {
@@ -196,17 +198,20 @@ display: none;
 .logo-text {
   display: flex;
   align-items: center;
-  font-family: 'Gilroy', sans-serif; /* Using Roboto as an example, update to match exact font */
+  font-family: 'Questrial', sans-serif; /* Using Roboto as an example, update to match exact font */
   color: #220052; /* Update to match exact color */
 }
 
 .logo-text .one {
-  font-size: 14px; /* Adjust the size to match the '1' */
+  font-size: 20px; /* Adjust the size to match the '1' */
   font-weight: 700; /* Adjust the weight to match the '1' */
+  font-family: 'Roboto', sans-serif;
 }
 
 .logo-text .click {
-  font-size: 14px; /* Adjust the size to match 'CLICK' */
-  font-weight: 100; /* Adjust the weight to match 'CLICK' */
+  font-size: 20px; /* Adjust the size to match 'CLICK' */
+  font-weight: 100;
+  font-family: 'Roboto', sans-serif;
+
 }
 

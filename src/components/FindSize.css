@@ -3,3 +3,32 @@
     justify-content: space-between;
     width: 100%;
 }
+
+.range-input {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #003b94, #ccd8f0); /* Blue gradient */
+    outline: none;
+    opacity: 0.9;
+    transition: opacity 0.2s;
+  }
+  
+  .range-input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #003b94; /* Blue color for the thumb */
+    cursor: pointer;
+  }
+  
+  .range-input::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #003b94; /* Blue color for the thumb */
+    cursor: pointer;
+  }
